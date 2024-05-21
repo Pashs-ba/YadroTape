@@ -19,4 +19,6 @@ class MyCoolTape {
   std::fstream tape_file_;
   int32_t current_pos_;
   Config config_;
+
+  void go_to_line(int32_t num) noexcept;
 };

@@ -1,6 +1,6 @@
 #pragma once
 
 enum OneStepDirection{
-  LEFT=0,
-  RIGHT
+  UP=0,
+  DOWN
 };

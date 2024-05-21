@@ -1,1 +1,2 @@
 add_subdirectory(MyCoolTape)
+add_subdirectory(config)
