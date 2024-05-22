@@ -1,2 +1,5 @@
 .idea
 cmake-build-debug
+to.tape
+from.tape
+tmp

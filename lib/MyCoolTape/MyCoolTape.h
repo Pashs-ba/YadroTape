@@ -14,11 +14,11 @@ class MyCoolTape {
   void write_current(uint32_t num) noexcept;
   void one_step(OneStepDirection direction) noexcept;
   void long_step(OneStepDirection direction, int32_t count) noexcept;
+  void rewind() noexcept;
+  int32_t get_current_position() noexcept;
 
  private:
   std::fstream tape_file_;
   int32_t current_pos_;
   Config config_;
-
-  void go_to_line(int32_t num) noexcept;
 };
