@@ -4,7 +4,7 @@
   "one_step_ms": 0,
   "long_step_ms": 0,
   "N": 100,
-  "M": 600,
+  "M": 100,
   "tmp_folder": "../../tmp/",
   "from_tape": "../../from.tape",
   "to_tape": "../../to.tape",

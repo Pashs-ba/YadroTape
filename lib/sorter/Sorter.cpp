@@ -155,9 +155,10 @@ void Sorter::sort(MyCoolTape& from_tape, MyCoolTape& to_tape, const Config& conf
             tmp2_size);
       return;
     }
+    current_block_size *= 2;
     block_count = std::max(tmp1_size, tmp2_size) % 2 == 0 ? std::max(tmp1_size, tmp2_size) / (current_block_size) :
                   std::max(tmp1_size, tmp2_size) / (current_block_size) + 1;
-    current_block_size *= 2;
+
     tmp3.rewind();
     tmp4.rewind();
     tmp1.rewind();
