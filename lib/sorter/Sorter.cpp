@@ -25,6 +25,8 @@ uint32_t get_suitable_block_size(uint32_t N, uint32_t M) noexcept {
 }
 
 MyCoolTape make_tmp(const std::string& name, const Config& config) noexcept {
+  std::ofstream create{config.tmp_folder + name};
+  create.close();
   std::fstream file;
   file.open(config.tmp_folder + name, std::ios::in | std::ios::out | std::ios::binary);
   if (!file.is_open()) {

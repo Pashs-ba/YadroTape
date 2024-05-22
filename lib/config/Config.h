@@ -10,4 +10,8 @@ struct Config {
   uint32_t N;
   uint32_t M;
   std::string tmp_folder;
+  std::string from_tape;
+  std::string to_tape;
+  std::string generation_strategy;
+  std::string output_strategy;
 };
